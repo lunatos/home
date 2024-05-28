@@ -11,7 +11,7 @@ function NavBar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        if(window.innerWidth <=900) {
+        if(window.innerWidth <=960) {
             setButton(false);
         } else {
             setButton(true);
@@ -25,7 +25,7 @@ function NavBar() {
         <nav className="navBar">
             <div className="navBar-container">
                 <Link to='/' className="navBar-home">
-                    Home-logo*
+                    <i class="fa-solid fa-blog"></i>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -33,17 +33,17 @@ function NavBar() {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            Home
+                            Home <i class="fa-solid fa-house"></i>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to='/lucas' className='nav-links' onClick={closeMobileMenu}>
+                            Bio <i class="fa-brands fa-pied-piper-alt"></i>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link to='/projetos' className='nav-links' onClick={closeMobileMenu}>
-                            Bio
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to='/projetos' className='nav-links' onClick={closeMobileMenu}>
-                            Projetos
+                            Projetos <i class="fa-solid fa-code"></i>
                         </Link>
                     </li>
                 </ul>
