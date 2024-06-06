@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './components/nav-bar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './components/pages/home';
 
 function App() {
   return (
@@ -9,9 +10,9 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path='/' exact />
+          <Route path='/' exact Component={Home}/>
         </Routes>
-        <h1>Hello World</h1>
+        <Home/>
       </Router>
     </>
   );

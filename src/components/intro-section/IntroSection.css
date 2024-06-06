@@ -1,10 +1,62 @@
+.bg {
+    background-color: rgb(28, 27, 27);
+}
+
 .intro-container {
-    background: url('img/cerebro.png') center center/cover no-repeat;
+    background: url('/public/img/cerebro.png') top center/contain no-repeat;
     height: 100vh;
-    width: 100%;
+    width: 100%; 
+    max-width: 900px; 
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
+    object-fit: scale-down;
+    justify-content: center;
+    text-align: center;
+}
+.intro-container > h1 {
+    color: #eb721a;
+
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 70px;
+    margin-top: -100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.intro-container > p {
+    color: #61DBFB;
+    font-size: 32px;
+    margin-top: 8px;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.intro-btns {
+    margin-top: 32px;
+}
+
+.intro-btns .btn {
+    margin: 6px;
+}
+
+@media screen and (max-width: 960px) {
+    .intro-container > h1 {
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-container > h1 {
+        font-size: 50px;
+        margin-top: -150px;
+    }
+
+    .intro-container > p {
+        font-size: 30px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
