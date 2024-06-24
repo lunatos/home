@@ -41,12 +41,12 @@ function NavBar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/lucas' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/bio' className='nav-links' onClick={closeMobileMenu}>
                             Bio <i class="fa-brands fa-pied-piper-alt"></i>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/projetos' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
                             Projetos <i class="fa-solid fa-code"></i>
                         </Link>
                     </li>
