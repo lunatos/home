@@ -1,7 +1,5 @@
 .intro-container {
-    background-color: #c4cace;
-    height: 100vh;
-    width: 100%;
+    background-color: #c9cdcf;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +13,6 @@
 .code-background {
     width: 100%;
     height: 50vh;
-    min-width: 80%;
     background: url(/img/codeBanner.jpg) repeat fixed center;
     border-bottom: 2px white solid;
     background-size: cover;
@@ -31,34 +28,18 @@
     position: absolute;
     width: 25vh;
     z-index: 4;
-    top: 37.5%;
+    top: -12.5vh;
 }
 
-.intro-btns {
-    margin-top: 32px;
+.title {
+    padding-top: 12.5vh;
 }
 
-.intro-btns .btn {
-    margin: 6px;
+.text {
+    text-align: justify;
+    padding-top: 30px;
 }
 
-@media screen and (max-width: 960px) {
-    .intro-container>h1 {
-        margin-top: -150px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .intro-container>h1 {
-        font-size: 50px;
-        margin-top: -150px;
-    }
-
-    .intro-container>p {
-        font-size: 30px;
-    }
-
-    .btn {
-        width: 100%;
-    }
+.back-color {
+    background-color: #d6dddf;
 }

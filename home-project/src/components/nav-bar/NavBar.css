@@ -1,9 +1,11 @@
   .navBar {
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    box-shadow: 3px 3px 5px black;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
@@ -15,23 +17,15 @@
     justify-content: center;
     align-items: center;
     height: 80px;
-    max-width: 1500px;
   }
   
   .navBar-home {
     color: #fff;
-    justify-self: start;
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
     display: flex;
-    align-items: center;
-  }
-  
-  .fa-blog {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
   }
   
   .nav-menu {
@@ -42,6 +36,8 @@
     width: 60vw;
     justify-content: end;
     margin-right: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   
   .nav-item {
@@ -58,12 +54,8 @@
   }
   
   .nav-links:hover {
-    transition: all 0.2s ease-out;
-    border-bottom: 4px solid #fff;
-  }
-
-  .nav-links:active {
-  color: rgba(255, 255, 255, 0.01);
+    transition: all 0.1s ease-out;
+    border-bottom: 3px solid #fff;
   }
   
   .fa-bars {
@@ -87,7 +79,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
+      height: 50vh;
       position: absolute;
       top: 80px;
       left: -100%;
@@ -103,6 +95,7 @@
       transition: all 0.5s ease;
       z-index: 1;
       justify-content: start;
+      padding: 0;
       padding-top: 20px;
     }
   
@@ -127,9 +120,8 @@
     .menu-icon {
       display: block;
       position: absolute;
-      top: 0;
       right: 0;
-      transform: translate(-100%, 60%);
+      transform: translate(-100%);
       font-size: 1.8rem;
       cursor: pointer;
     }

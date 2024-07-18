@@ -4,7 +4,7 @@ import Footer from "../footer/Footer"
 
 function Home() {
     return (
-        <>       
+        <>           
             <IntroSection />
             <Footer/>
         </>

@@ -9,17 +9,14 @@ function Footer() {
             <div className="footer-link-wrapper">
                 <div className="footer-link-items">
                     <h2>Contatos</h2>
-                    <p>Meu email</p>
-                    <p>Meu wpp</p>
-                    <p>Meu instagram</p>
-                    <p></p>
+                    <p><i class="fa-brands fa-whatsapp"></i> (31) 99130-3890</p>
+                    <p><i class="fa-regular fa-envelope"></i> lucascamarino@gmail.com</p>   
                 </div>
                 <div className="footer-link-items">
                     <h2>Redes Sociais</h2>
-                    <p>Meu github</p>
-                    <p>Meu linkedin</p>
-                    <p>Meu instagram</p>
-                    <p>Meu wpp</p>
+                    <Link to='https://github.com/lunatos'><i class="fa-brands fa-github"></i> GitHub</Link>
+                    <Link to='https://www.linkedin.com/in/lucas-camarino/'><i class="fa-brands fa-linkedin"></i> Linkedin</Link>
+                    <Link to='https://www.instagram.com/lucas_camarino/'><i class='fab fa-instagram' /> Instagram </Link>
                 </div>
             </div>
             <section class='social-media'>
@@ -27,44 +24,28 @@ function Footer() {
                     <small class='website-rights'>Lucas Camarino Emerick de Almeida © 2024</small>
                     <div class='social-icons'>
                         <Link
-                            class='social-icon-link facebook'
-                            to='/'
+                            class='social-icon-link github'
+                            to='https://github.com/lunatos'
                             target='_blank'
-                            aria-label='Facebook'
+                            aria-label='GitHub'
                         >
-                            <i class='fab fa-facebook-f' />
+                            <i class="fa-brands fa-github"></i>
                         </Link>
                         <Link
                             class='social-icon-link instagram'
-                            to='/'
+                            to='https://www.instagram.com/lucas_camarino/'
                             target='_blank'
                             aria-label='Instagram'
                         >
                             <i class='fab fa-instagram' />
                         </Link>
                         <Link
-                            class='social-icon-link youtube'
-                            to='/'
+                            class='social-icon-link linkedin'
+                            to='https://www.linkedin.com/in/lucas-camarino/'
                             target='_blank'
-                            aria-label='Youtube'
+                            aria-label='Linkedin'
                         >
-                            <i class='fab fa-youtube' />
-                        </Link>
-                        <Link
-                            class='social-icon-link twitter'
-                            to='/'
-                            target='_blank'
-                            aria-label='Twitter'
-                        >
-                            <i class='fab fa-twitter' />
-                        </Link>
-                        <Link
-                            class='social-icon-link twitter'
-                            to='/'
-                            target='_blank'
-                            aria-label='LinkedIn'
-                        >
-                            <i class='fab fa-linkedin' />
+                            <i class="fa-brands fa-linkedin"></i>
                         </Link>
                     </div>
                 </div>
