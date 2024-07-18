@@ -13,7 +13,7 @@ function IntroSection() {
             <div className="back-color">
                 <Container className="bio-container">
                     <Row className="main-row">
-                        <Col className="my-pic-container" md={6} sm={12}><Image className="my-pic" src="img/EmpEu.jpeg" rounded fluid /></Col>
+                        <Col className="my-pic-container" md={6} sm={12}><Image className="my-pic" src="home/img/EmpEu.jpeg" rounded fluid /></Col>
                         <Col>
                             <Row className="bio-text">
                                 Nascido em 12/07/2001, Belo Horizonte, sou um entusiasta da tecnologia, estudei no Colégio São Paulo e durante esse período dos 5-13 anos estudei música e com 14 tive aulas de robótica, depois, com 15-17 estudei no Colégio estadual Leopoldo de Miranda. Decidi aprofundar meus estudos fazendo uma faculdade de Engenharia, porém com 21 anos decidi reorientar meus estudos fazendo Ciência da computação na PUC, onde estou hoje em dia.
