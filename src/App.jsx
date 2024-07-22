@@ -13,9 +13,9 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/bio' exact element={<Bio />} />
-          <Route path='/projects' exact element={<Projects />} />
+          <Route path='/home' exact element={<Home />} />
+          <Route path='/home/bio' exact element={<Bio />} />
+          <Route path='/home/projects' exact element={<Projects />} />
         </Routes>
       </Router>
     </>
