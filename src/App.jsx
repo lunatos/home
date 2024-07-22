@@ -10,12 +10,12 @@ import Projects from './components/pages/projects';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename='/home/'>
         <NavBar />
         <Routes>
-          <Route path='/home' exact element={<Home />} />
-          <Route path='/home/bio' exact element={<Bio />} />
-          <Route path='/home/projects' exact element={<Projects />} />
+          <Route path='/' exact element={<Home />} />
+          <Route path='/bio' exact element={<Bio />} />
+          <Route path='/projects' exact element={<Projects />} />
         </Routes>
       </Router>
     </>
