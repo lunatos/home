@@ -16,13 +16,13 @@ function IntroSection() {
                         <Col className="my-pic-container" md={6} sm={12}><Image className="my-pic" src="home/img/EmpEu.jpeg" rounded fluid /></Col>
                         <Col>
                             <Row className="bio-text">
-                                Nascido em 12/07/2001, Belo Horizonte, sou um entusiasta da tecnologia, estudei no Colégio São Paulo e durante esse período dos 5-13 anos estudei música e com 14 tive aulas de robótica, depois, com 15-17 estudei no Colégio estadual Leopoldo de Miranda. Decidi aprofundar meus estudos fazendo uma faculdade de Engenharia, porém com 21 anos decidi reorientar meus estudos fazendo Ciência da computação na PUC, onde estou hoje em dia.
+                                Meu nome completo é Lucas Camarino Emerick de Almeida, nasci em 12/07/2001, Belo Horizonte, estudei no Colégio São Paulo e depois no Colégio estadual Leopoldo de Miranda. Decidi aprofundar meus estudos fazendo uma faculdade de Engenharia, porém com 21 anos decidi reorientar meus estudos fazendo Ciência da computação na PUC, onde estou hoje em dia.
                             </Row>
                             <Row className="bio-text">
-                                Além dos estudos acadêmicos, aos 22 anos eu me ofereci para prestar um trabalho voluntário desenvolvendo do 0 um aplicativo de celular chamado Inglês Up que consiste em geração de resumos de livros em inglês e portugues e uma página que o usuário visualiza ao mesmo tempo esses 2 textos e uma voz robótica que lia o texto em inglês e grifava o que já tinha lido nos dois textos, assim o usuário podia acompanhar e ir trabalhando o seu conhecimento de inglês.
+                                Além dos estudos acadêmicos, aos 22 anos eu me ofereci para prestar um trabalho voluntário desenvolvendo do 0 um aplicativo de celular chamado Inglês Up que consiste em geração de resumos de livros em inglês e portugues e uma página que o usuário visualiza ao mesmo tempo esses 2 textos e uma voz robótica que lia o texto em inglês e grifava o que já tinha lido nos dois textos, assim o usuário podia acompanhar a voz e ir trabalhando o seu conhecimento de inglês.
                             </Row>
                             <Row className="bio-text">
-                                Com esse trabalho aprendi a desenvolver aplicações tanto no contexto de back-end quanto front-end e trabalhar com metodologias ágeis. Abaixo estão algumas habilidades que eu adquiri no contexto de programação.
+                                Nesse trabalho desenvolvi aplicações tanto no contexto de back-end quanto front-end e trabalhei usando metodologias ágeis, o que foi muito bom. Além disso, ja desenvolvi diversos projetos em diferentes linguagens de programação, alguns com equipe e outros sozinho, para objetivos acadêmicos ou pessoais, com tudo isso desenvolvi alguma aptidão nessa área. Abaixo estão algumas habilidades que eu adquiri no contexto de programação.
                             </Row>
                             <Row>
                                 <Accordion defaultActiveKey="0">
@@ -47,7 +47,7 @@ function IntroSection() {
                                     <Accordion.Item eventKey="3">
                                         <Accordion.Header>Adicionais</Accordion.Header>
                                         <Accordion.Body>
-                                            Pacote Office (Excel, Word, Power Point), HTML, CSS, Noções de estatística.
+                                            Pacote Office (Excel, Word, Power Point), HTML, CSS, Noções de estatística, e o uso de Metodologias ágeis.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </Accordion>
