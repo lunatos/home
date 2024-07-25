@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react';
 import "./ProjectSection.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom'
+import { Col } from 'react-bootstrap';
 
 function ProjectSection() {
   const [repos, setRepos] = useState([]);
   const [error, setError] = useState(null);
+  const [hovered, setHovered] = useState(null);
 
   useEffect(() => {
     fetch(`https://api.github.com/users/lunatos/repos`)
@@ -29,13 +31,22 @@ function ProjectSection() {
       <div className="projetos-background"></div>
       <div className="back-color">
         <Container className="project-container">
-          <Row>
-            <h2 className='p-2'>Meus Repositorios Publicos no GitHub:</h2>
-            <Accordion defaultActiveKey={0}>
+          <Row className='justify-content-center'>
+            <h2 className='p-2 fw-bold text-dark'>Meus Repositorios Publicos no GitHub:</h2>
+            <Col sm="6" className='p-0' onMouseLeave={() => setHovered(null)}>
               {repos.map((repo, index) => (
-                <Accordion.Item eventKey={index}>
-                  <Accordion.Header>{repo.name}</Accordion.Header>
-                  <Accordion.Body>
+                <Card className="shadow p-3 bg-white rounded repo-item" onMouseEnter={() => setHovered(index)} 
+                style={{
+                    transform: hovered === index ? 'scale(1.1)' : hovered === null? 'scale(1)' : 'scale(0.9)',
+                    marginBottom: hovered === index? '.5rem' : hovered === null? '.25rem' : '-.5rem'
+                  }}>
+                  <Row>
+                    <h3 className='fw-bold text-dark text-opacity-75'>{repo.name}</h3>
+                  </Row>
+                  <Row>
+                  <p className="text-center text-secondary bg-light rounded">{repo.description}</p>
+                  </Row>
+                  <Row>
                     <Link
                       class="github-link"
                       to={repo.html_url}
@@ -44,10 +55,10 @@ function ProjectSection() {
                     >
                       <i class="fa-brands fa-github"></i> {repo.html_url}
                     </Link>
-                  </Accordion.Body>
-                </Accordion.Item>
+                  </Row>
+                </Card>
               ))}
-            </Accordion>
+            </Col>
           </Row>
         </Container>
       </div>

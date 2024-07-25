@@ -1,5 +1,5 @@
 .project-container {
-    background-color: #9fc7db;
+    background-color: #eeeeee;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,6 @@
 .github-link {
   text-decoration: none;
   color: #000000;
-  margin-bottom: 0.5rem;
 }
 
 .github-link:hover {  
@@ -31,4 +30,8 @@
 
 .temp-msg {
   padding-top: 40px;
+}
+
+.repo-item {
+  transition: transform 0.4s ease-in-out;
 }
